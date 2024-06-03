@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'BebasNeue-Regular';
+    src: url(../font/BebasNeue-Regular.woff2) format('woff2'),
+        url(../font/BebasNeue-Regular.woff) format('woff');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Inter-Regular';
+    src: url(../font/Inter-Regular.woff2) format('woff2'),
+        url(../font/Inter-Regular.woff) format('woff');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Onest-Regular';
+    src: url(../font/Onest-Regular.woff2) format('woff2'),
+        url(../font/Onest-Regular.woff) format('woff');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url(../font/Roboto-Bold.woff2) format('woff2'),
+        url(../font/Roboto-Bold.woff) format('woff');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url(../font/Roboto-Light.woff2) format('woff2'),
+        url(../font/Roboto-Light.woff) format('woff');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url(../font/Roboto-Medium.woff2) format('woff2'),
+        url(../font/Roboto-Medium.woff) format('woff');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url(../font/Roboto-Regular.woff2) format('woff2'),
+        url(../font/Roboto-Regular.woff) format('woff');
+    font-weight: 400;
+}
+
+:root {
+    --BebasNeue-R: BebasNeue-Regular;
+    --Inter-R: Inter-Regular;
+    --Onest-R: Onest-Regular;
+    --Roboto-Bold: Roboto-Bold;
+    --Roboto-L: Roboto-Light;
+    --Roboto-M: Roboto-Medium;
+    --Roboto-R: Roboto-Regular;
+}
