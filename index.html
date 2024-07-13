@@ -3,64 +3,424 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css\reset.css">
+
+    <link rel="stylesheet" href="css\swiper-bundle.css">
     <link rel="stylesheet" href="css\style.css">
+
     <link rel="stylesheet" href="css\adaptive.css">
+
+    <script defer src="js\swiper-bundle.js"></script>
+    <script defer src="js\main.js"></script>
+    <script defer src="js\search.js"></script>
+    <script defer src="js\form.js"></script>
+
+
     <title>Арсенал Восток</title>
 </head>
 
 <body>
     <div class="wrapper">
         <header class="header">
-            <div class="header__content">
-                <div class="header__content-top content__top">
+            <div class="header__body">
+                <div class="header__top">
                     <div class="container">
-
-                        <div class="content__top-location">
-                            <p class="content__top-adress">
-                                603152, г. Нижний Новгород, ул. Кащенко, д. 2 «Б», оф. 31
-                            </p>
-                            <div class="content__top-social">
-                                <a class="social" href=""><img src="photo\incon\telegram.svg" alt="Telegram"></a>
-                                <a class="social" href=""><img src="photo\incon\whatsapp.svg" alt="Whatsapp"></a>
-                                <div class="content__top-tel">
-                                    <a class="phone" href="tel:+7916705-62-90">+7(916)705-62-90</a>
+                        <div class="header__top-content">
+                            <a href="tel:" class="header__top-tel header__top-tel_mb">+7(916)705-62-90</a>
+                            <div class="header__top-info-pc">
+                                <a href="" class="header__top-address">603152, г. Нижний Новгород, ул. Кащенко, д. 2
+                                    «Б», оф. 31</a>
+                                <div class="header__top-social">
+                                    <a href="##" class="header__top-social-link header__top-social-link_whatsapp"></a>
+                                    <a href="##" class="header__top-social-link header__top-social-link_telegram"></a>
+                                    <a href="tel:79167056290"
+                                        class="header__top-tel header__top-tel_pc">+7(916)705-62-90</a>
                                 </div>
-                            </div>
-
-                            <div class="content__top-mail">
-                                <a class="mail" href="mailto:arsenalvostok@bk.ru">arsenalvostok@bk.ru</a>
+                                <a href="mailto:" class="header__top-tel header__top-tel_mail">arsenalvostok@bk.ru</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="header__content-bottom">
+                <div class="header__bottom">
                     <div class="container">
-                        <div class="content__bottom">
-
-                            <div class="header__logo">
-                                <a href="##"> <img src="photo\Арсенал Восток.jpg" alt="Арсенал Восток"></a>
+                        <div class="header__bottom-content">
+                            <div class="header__bottom-top">
+                                <div class="header__box-logo">
+                                    <img src="photo\Арсенал Восток.jpg" alt="" class="header__logo">
+                                    <a href="index.html" class="header__logo-link"></a>
+                                </div>
                             </div>
-                            <nav class="header__menu menu">
-                                <ul class="menu__list">
-                                    <li class="menu__item"><a class="menu__item-link" href="##">Каталог техники</a></li>
-                                    <li class="menu__item"><a class="menu__item-link" href="##">Доставка и оплата</a>
-                                    </li>
-                                    <li class="menu__item"><a class="menu__item-link" href="##">Сервис и запчасти</a>
-                                    </li>
-                                    <li class="menu__item"><a class="menu__item-link" href="##">Информация о
-                                            компании</a>
-                                    </li>
-                                    <li class="menu__item"><a class="menu__item-link" href="##">Контакты</a></li>
-                                    <li class="menu__item"><a class="menu__item-link" href="##">Сертификаты</a></li>
+                            <div class="header__bottom-bottom">
+                                <nav class="header__menu">
+                                    <ul class="header__list">
+                                        <li><a href="catalog-page.html" class="header__list-item">Каталог товаров</a>
+                                        </li>
+                                        <li><a href="##" class="header__list-item btn-link ">Доставка и оплата</a>
+                                        </li>
+                                        <li><a href="about.html" class="header__list-item">Информация о
+                                                компании</a></li>
+                                        <li><a href="#info__comrany" class="header__list-item">Контакты</a></li>
+                                        <li><a href="##" class="header__list-item">Сертификаты и
+                                                отзывы</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="header__burger burger">
+                                <div class="header__burger-body">
+                                    <div class="burger__line burger__line--1"></div>
+                                    <div class="burger__line burger__line--2"></div>
+                                    <div class="burger__line burger__line--3"></div>
+                                    <div class="burger__line burger__line--4"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="hero">
+                <div class="container">
+                    <div class="hero__inner">
+                        <div class="hero__text">
+                            <h2 class="hero__text-top">Официальный дилер более 30 заводов-изготовителей </h2>
+                            <h1 class="hero__title">ГАРАНТИРОВАННЫЕ ПОСТАВКИ <span>КАЧЕСТВЕННОЙ ТЕХНИКИ</span> </h1>
+                            <p class="hero__text-subtitle">ООО «АРСЕНАЛ-ВОСТОК» является официальным дилером одного
+                                из ведущих отечественных производителей путевых и маневровых машин</p>
+                            <div class="hero__btn">
+                                <a class="hero__btn-link" href="catalog-page.html">Перейти в каталог</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="catalog">
+                <div class="container">
+                    <div class="catalog__inner">
+                        <div class="catalog__title">
+                            <h2 class="catalog__title-text">Каталог техники</h2>
+                            <span class="line"></span>
+                        </div>
+                        <div class="card__box">
+                            <div class="catalog__card">
+                                <span class="card__title">Строительная техника</span>
+                                <img class="card__photo" src="photo\catalog\card\construction.png"
+                                    alt="Строительная техника">
+                                <a class="card__link" href="product-name.html">
+                                </a>
+                            </div>
+                            <div class="catalog__card">
+                                <span class="card__title">Карьерная техника</span>
+                                <img class="card__photo" src="photo\catalog\card\career.png" alt="Карьерная техника">
+                                <a class="card__link" href="##">
+                                </a>
+                            </div>
+                            <div class="catalog__card">
+                                <span class="card__title">Дорожная техника</span>
+                                <img class="card__photo" src="photo\catalog\card\road.png" alt="Дорожная техника">
+                                <a class="card__link" href="##">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="catalog__btn">
+                            <a class="catalog__btn-link" href="catalog-page.html">Просмотреть весь каталог</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="About">
+                <div class="container">
+                    <div class="About__inner">
+                        <div class="About__title">
+                            <h2 class="About__title-text">О компании</h2>
+                            <span class="line"></span>
+                        </div>
+                        <div class="About__text-box">
+                            <div class="subtitle">
+                                <p class="subtitle__text">ООО «АРСЕНАЛ-ВОСТОК» является официальным дилером одного из
+                                    ведущих отечественных производителей путевых и маневровых машин, колесно-рельсовых
+                                    тягачей, мотовозов, локомобилей, средств средней и малой механизации и другой
+                                    техники
+                                    <span class="subtitle__text-bold"> ООО «Ригель АВ-Белгород»</span> .
+                                </p>
+                            </div>
+                            <div class="About__info">
+                                <div class="About__info-box info">
+                                    <h2 class="info__box-logo">OOO «ArsenalVest»</h2>
+                                    <h3 class="info__box-title">Офис компании</h3>
+                                    <span class="info__production">Производство</span>
+
+                                    <div class="info__location">
+                                        <span class="info__adress-title">Адрес:</span>
+                                        <span class="info__adress-text">603152, г. Нижний Новгород, ул. Кащенко, д. 2
+                                            «Б»,
+                                            оф. 31</span>
+
+                                        <span class="info__inn-title">ИНН / КПП:</span>
+                                        <span class="info__inn-text">5263086494/526101001</span>
+
+                                        <span class="info__tel-title">Телефон:</span>
+                                        <span class="info__tel-text">
+                                            <a class="info__tel-link" href="tel:+79167056290">+7(916)705-62-90</a>
+                                        </span>
+
+                                        <span class="info__mail-title">E-mail:</span>
+                                        <span class="info__mail-text"><a class="info__mail-blue"
+                                                href=" mailto:arsenalvostok@bk.ru">arsenalvostok@bk.ru</a>
+                                        </span>
+                                    </div>
+                                    <div class="info__btn">
+                                        <a href="##" class="info__btn-link btn-link">Обратный звонок</a>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="brend__box">
+                            <div class="about__item about__item_brands">
+                                <div class="brands__swiper swiper">
+                                    <div class="brands__wrapper swiper-wrapper">
+                                        <div class="brands__slide swiper-slide">
+                                            <div class="brands__slide-card">
+                                                <div class="brands__slide-box-img">
+                                                    <img src="photo\brend\case.svg" alt="" class="brands__slide-img" />
+                                                </div>
+                                            </div>
+                                            <div class="brands__slide-card">
+                                                <div class="brands__slide-box-img">
+                                                    <img src="photo\brend\class.png" alt="" class="brands__slide-img" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="brands__slide swiper-slide">
+                                            <div class="brands__slide-card">
+                                                <div class="brands__slide-box-img">
+                                                    <img src="photo\brend\DF.png" alt="" class="brands__slide-img" />
+                                                </div>
+                                            </div>
+                                            <div class="brands__slide-card">
+                                                <div class="brands__slide-box-img">
+                                                    <img src="photo\brend\HOWO.png" alt="" class="brands__slide-img" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="brands__slide swiper-slide">
+                                            <div class="brands__slide-card">
+                                                <div class="brands__slide-box-img">
+                                                    <img src="photo\brend\JD.png" alt="" class="brands__slide-img" />
+                                                </div>
+                                            </div>
+                                            <div class="brands__slide-card">
+                                                <div class="brands__slide-box-img">
+                                                    <img src="photo\brend\JIN.png" alt="" class="brands__slide-img" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="brands__slide swiper-slide">
+                                            <div class="brands__slide-card">
+                                                <div class="brands__slide-box-img">
+                                                    <img src="photo\brend\LAV.png" alt="" class="brands__slide-img" />
+                                                </div>
+                                            </div>
+                                            <div class="brands__slide-card">
+                                                <div class="brands__slide-box-img">
+                                                    <img src="photo\brend\MF.png" alt="" class="brands__slide-img" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="brands__slide swiper-slide">
+                                            <div class="brands__slide-card">
+                                                <div class="brands__slide-box-img">
+                                                    <img src="photo\brend\NH.png" alt="" class="brands__slide-img" />
+                                                </div>
+                                            </div>
+                                            <div class="brands__slide-card">
+                                                <div class="brands__slide-box-img">
+                                                    <img src="photo\brend\volvo.png" alt="" class="brands__slide-img" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="brands__slide swiper-slide">
+                                            <div class="brands__slide-card">
+                                                <div class="brands__slide-box-img">
+                                                    <img src="photo\brend\NH.png" alt="" class="brands__slide-img" />
+                                                </div>
+                                            </div>
+                                            <div class="brands__slide-card">
+                                                <div class="brands__slide-box-img">
+                                                    <img src="photo\brend\volvo.png" alt="" class="brands__slide-img" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="brands__slide swiper-slide">
+                                            <div class="brands__slide-card">
+                                                <div class="brands__slide-box-img">
+                                                    <img src="photo\brend\NH.png" alt="" class="brands__slide-img" />
+                                                </div>
+                                            </div>
+                                            <div class="brands__slide-card">
+                                                <div class="brands__slide-box-img">
+                                                    <img src="photo\brend\volvo.png" alt="" class="brands__slide-img" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="brands__slide swiper-slide">
+                                            <div class="brands__slide-card">
+                                                <div class="brands__slide-box-img">
+                                                    <img src="photo\brend\NH.png" alt="" class="brands__slide-img" />
+                                                </div>
+                                            </div>
+                                            <div class="brands__slide-card">
+                                                <div class="brands__slide-box-img">
+                                                    <img src="photo\brend\volvo.png" alt="" class="brands__slide-img" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="brands__slide swiper-slide">
+                                            <div class="brands__slide-card">
+                                                <div class="brands__slide-box-img">
+                                                    <img src="photo\brend\NH.png" alt="" class="brands__slide-img" />
+                                                </div>
+                                            </div>
+                                            <div class="brands__slide-card">
+                                                <div class="brands__slide-box-img">
+                                                    <img src="photo\brend\volvo.png" alt="" class="brands__slide-img" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="brands__slide swiper-slide">
+                                            <div class="brands__slide-card">
+                                                <div class="brands__slide-box-img">
+                                                    <img src="photo\brend\NH.png" alt="" class="brands__slide-img" />
+                                                </div>
+                                            </div>
+                                            <div class="brands__slide-card">
+                                                <div class="brands__slide-box-img">
+                                                    <img src="photo\brend\volvo.png" alt="" class="brands__slide-img" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="brands__scrollbar swiper-scrollbar"></div>
+                                    <div class="brands__pagination swiper-pagination"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__inner">
+                <div class="container">
+                    <div class="footer__content">
+                        <div class="footer__content-top">
+                            <div class="footer__technique technique">
+                                <span class="technique__title">Техника</span>
+                                <ul class="technique__list">
+                                    <li class="technique__item"><a class="technique__item-link" href="##">Карьерная
+                                            техника</a></li>
+                                    <li class="technique__item"><a class="technique__item-link" href="##">Сельхоз
+                                            техника</a></li>
+                                    <li class="technique__item"><a class="technique__item-link" href="##">Строительная
+                                            техника</a></li>
+                                    <li class="technique__item"><a class="technique__item-link" href="##">Складская
+                                            техника</a></li>
                                 </ul>
-                            </nav>
+                            </div>
+                            <div class="footer__Documentation Documentation">
+                                <span class="Documentation__title">Документация</span>
+                                <ul class="Documentation__list">
+                                    <li class="Documentation__list-item"><a href="##"
+                                            class="Documentation__list-link">Документ № 1</a></li>
+                                    <li class="Documentation__list-item"><a href="##"
+                                            class="Documentation__list-link">Документ № 2</a></li>
+                                    <li class="Documentation__list-item"><a href="##"
+                                            class="Documentation__list-link">Документ № 3 </a></li>
+                                    <li class="Documentation__list-item"><a href="##"
+                                            class="Documentation__list-link">Документ № 4</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer__service">
+                                <span class="service__title">Сервис</span>
+                                <ul class="service__list">
+                                    <li class="service__list-item"><a href="##" class="service__list-link">Услуга
+                                            №1</a></li>
+                                    <li class="service__list-item"><a href="##" class="service__list-link">Услуга
+                                            №2</a></li>
+                                    <li class="service__list-item"><a href="##" class="service__list-link">Услуга №3
+                                        </a></li>
+                                    <li class="service__list-item"><a href="##" class="service__list-link">Услуга
+                                            №4</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer__Company">
+                                <span class="footer__Company-title">Компания</span>
+                                <ul class="Company__list">
+                                    <li class="Company__list-item"><a href="##" class="footer__Company-link">Информация
+                                            о компании</a></li>
+                                    <li class="Company__list-item"><a href="##" class="footer__Company-link">Отзывы</a>
+                                    </li>
+                                    <li class="Company__list-item"><a href="##"
+                                            class="footer__Company-link">Реквизиты</a></li>
+                                    <li class="Company__list-item"><a href="##" class="footer__Company-link">Адрес
+                                            офиса</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer__content-bottom">
+                            <div class="footer__title">
+                                <h2 class="footer__title-text">
+                                    <img src="photo\Арсенал Восток.jpg" alt="">
+                                </h2>
+                            </div>
+                            <div class="footer__social-box">
+                                <div class="footer__social">
+                                    <span class="atcompany">arsenaleast ©  2024</span>
+                                    <a href="##" class="footer__confidentiality">Политика конфиденциальности</a>
+                                </div>
+                                <div class="footer__social-link">
+                                    <a href="##" class="footer__social-tg">
+                                        <img src="photo\incon\tgFooter.svg" alt="">
+                                    </a>
+                                    <a href="##" class="footer__social-ws">
+                                        <img src="photo\incon\WhatsappFooter.svg" alt="">
+                                    </a>
+                                    <a href="##" class="footer__social-mail">
+                                        <img src="photo\incon\pocshta.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </header>
+        </footer>
+        <div class="form">
+            <div class="form__area"></div>
+            <div class="form__wrapper">
+                <div class="form__top">
+                    <div class="form__clouse">&#215</div>
+                    <h2 class="form__title">Мы свяжемся с вами <br>
+                        <span>в течении 1 часа</span>
+                    </h2>
+                </div>
+                <form class="form__body" name="main">
+                    <div class="form__inputs">
+                        <input type="text" name="name" placeholder="Ваше имя" autocomplete="off" class="form__input" />
+                        <input type="text" name="phone" placeholder="Номер телефона" autocomplete="off"
+                            class="form__input form__input_tel" maxlength="12" />
+                        <input type="text" name="name" placeholder="E-mail" autocomplete="off" class="form__input" />
+                    </div>
+                    <div class="box-btn-form">
+                        <button name="btn" type="submit" class="fixed__form-btn btn">Отправить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
 </body>
 
